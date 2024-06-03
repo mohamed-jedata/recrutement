@@ -1,0 +1,60 @@
+
+
+div.dt-container .dt-paging .dt-paging-button{
+    padding:8px 16px ;
+    border: 1px solid #ddd;
+    margin: 0;
+    border-radius: 0;
+    background: white;
+    color: black;
+}
+
+
+
+div.dt-container .dt-paging .dt-paging-button:hover {
+    background: #ddd ;
+    color: black !important;
+    border-color:transparent ;
+}
+
+div.dt-container .dt-paging .dt-paging-button.disabled{
+    padding:8px 16px ;
+    border: 1px solid #ddd;
+    margin: 0;
+    border-radius: 0;
+    background: white;
+    color: black;
+}
+div.dt-container .dt-paging .dt-paging-button.disabled:hover{
+    background: white ;
+    border-color:transparent ;
+}
+
+div.dt-container .dt-paging .dt-paging-button.disabled, div.dt-container .dt-paging .dt-paging-button.disabled:hover{
+    /* color: black; */
+    border:1px solid #c4abab
+}
+
+div.dt-container .dt-paging .dt-paging-button.current, div.dt-container .dt-paging .dt-paging-button.current:hover {
+    border: none;
+}
+
+div.dt-container .dt-paging .dt-paging-button.first{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+div.dt-container .dt-paging .dt-paging-button.last{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+div.dt-container select.dt-input {
+    padding-right: 20px;
+  }
+ select{
+    background-position: right 1px center ;
+  }
+
+  #data-table_wrapper .dt-search {
+   display: none;
+}
