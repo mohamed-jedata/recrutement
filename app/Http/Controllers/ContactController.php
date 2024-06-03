@@ -116,7 +116,7 @@ class ContactController extends Controller
             'prenom' => 'required|alpha',
             'nom' => 'required|alpha',
             'e_mail' => 'required|email',
-            'orgnom' => 'required',
+            'orgnom' => 'required|regex:/^[a-zA-Z0-9\s]+$/',
             'orgadresse' => 'required',
             'orgcode_postal' => 'required|numeric',
             'orgville' => 'required',
@@ -143,7 +143,7 @@ class ContactController extends Controller
         $contact->save();
         
 
-        return redirect()->back()->with('status', 'Contact Modofié!');
+        return redirect()->back()->with('status', 'Contact Modifié!');
     }
 
     /**
